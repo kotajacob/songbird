@@ -1,3 +1,6 @@
+# Text editor files
+*.swp
+
 # Compiled Lua sources
 luac.out
 
