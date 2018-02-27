@@ -1,6 +1,6 @@
 # `songbird`
 
-A [love2D](https://love2d.org/) engine extender
+A [love2D](https://love2d.org/) game engine extender 🕊️
 
 **Currently songbird is in the early development stages and the first pre-release version is yet to be released.**
 
