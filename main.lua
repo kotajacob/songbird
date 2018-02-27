@@ -2,7 +2,7 @@
 -- Songbird - A love2d engine extender --
 
 -- import class library
-local class = require 'lib/middleclass'
+local class = require 'libs/middleclass'
 
 -- love load callback
 function love.load()
