@@ -1,7 +1,7 @@
 background_color,46,52,64
 background_image,nil
 size,960,540
-follow,nil
+follow_object,nil
 follow_distance,nil
 object,obj_circle,100,100
 object,obj_square,200,200
