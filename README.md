@@ -31,6 +31,7 @@ can be found in that same directory named after the resource in question.
  * Scripts
  * Fonts
  * Videos
+ * Particles
 
 
 ## Versioning
