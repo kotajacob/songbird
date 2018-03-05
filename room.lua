@@ -1,11 +1,11 @@
 -- Import class library
-local class = require '../libs/middleclass'
+local Class = require '../libs/classic'
 
 -- Create room class
 
-Room = class('Room')
+class_room = Class:extend()
 
-function Room:initialize(name)
+function class_room:new(name)
 	-- variables to store basic room information
 	self.name = name
 	self.size = {960, 540}
@@ -69,8 +69,8 @@ function Room:initialize(name)
 	end
 end
 
-function Room:update(dt)
+function class_room:update(dt)
 end
 
-function Room:draw()
+function class_room:draw()
 end

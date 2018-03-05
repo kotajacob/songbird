@@ -2,7 +2,7 @@
 -- Songbird - A love2d engine extender --
 
 -- import class library
-local class = require 'libs/middleclass'
+local Class = require 'libs/classic'
 
 -- love load callback
 function love.load()
@@ -10,15 +10,15 @@ function love.load()
 	require 'room'
 
 	-- initialize resources
-	ROOM = Room:new("room_main")
+	Room = class_room("room_main")
 end
 
 -- love update callback
 function love.update(dt)
-	ROOM:update(dt)
+	Room:update(dt)
 end
 
 -- love draw callback
 function love.draw()
-	ROOM:draw()
+	Room:draw()
 end
