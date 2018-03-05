@@ -3,6 +3,7 @@
 
 -- import class library
 local Class = require 'libs/classic'
+require 'libs/autobatch' -- overrides love.graphics to automatically batch sprites
 
 -- love load callback
 function love.load()
