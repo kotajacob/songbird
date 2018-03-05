@@ -57,4 +57,6 @@ Songbird is licensed under the very permissive MIT license so feel free to use i
 
 For third-party libraries included with songbird look in the libs folder for the files ending with `license.txt`. They will only be included if they are licensed under the MIT or a more permissive license. Below is a list of all the third-party libraries included.
 
- * [Middleclass](https://github.com/kikito/middleclass) - by Kikito - MIT
+ * [classic (modified)](https://github.com/rxi/classic) - by rxi - MIT
+ * [autobatch](https://github.com/rxi/autobatch) - by rxi - MIT
+
