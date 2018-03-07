@@ -41,6 +41,14 @@ This value is used to specify and object which the rooms view port will stay cen
 
 This example will make the room follow the object called obj_player
 
+### follow_distance
+
+This value is used to specify how far the followed object can be from the center of the screen without the camera moving.
+
+**Example:** `follow_distance,128`
+
+This example will allow the followed object to be up to 128 pixel units in any direction from the center of the visible view area before the camera will move with the object.
+
 ### background_color
 
 This value is used to specify a background color for the room. There are three methods for writing the color. The color method is the first item after the ID value. Then the actual color value is next after that.  
@@ -76,9 +84,9 @@ This will draw the image named img_main_menu stretched to fit in the room.
 This value is used to render a piece of a tileset as a background of the room.
 *(Note tile sets are rendered above the room background but below all objects)*
 
-The first item after the ID is the image being used as a tile set. Then the starting cord in the image as a table, then the width and height as a table. Then the top left cord in the room.
+The first item after the ID is the image being used as a tile set. Then the starting cords in the image, then the width and height. Then the top left cord in the room.
 
-**Example:** `tile,img_grass_tiles,{32,0},{32,32},{0,0}`
+**Example:** `tile,img_grass_tiles,32,0,32,32,0,0`
 
 The above example will load a 32 pixel wide by 32 pixel tall tile from img_grass_tiles starting at the point x = 32, y = 0. Then it will render it into the room at point x = 0, y = 0.
 

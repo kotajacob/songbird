@@ -11,7 +11,7 @@ Called exactly once when the game starts.
 ### quit
 Called when the game is closed.
 
-### create
+### new
 Called exactly once when the listening instance is created.
 
 ### pre-step

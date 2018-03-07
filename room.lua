@@ -9,10 +9,12 @@ function class_room:new(name)
 	-- variables to store basic room information
 	self.name = name
 	self.size = {960, 540}
-	self.background_image = nil
-	self.background_color = {255, 255, 255}
+	self.view_size = self.size
 	self.follow_object = nil
 	self.follow_distance = nil
+	self.background_image = nil
+	self.background_color = {255, 255, 255}
+	self.tiles = {}
 	self.objects = {}
 
 	-- try to open the sroom file
@@ -23,39 +25,48 @@ function class_room:new(name)
 			-- get the first part of the line
 			-- this value determines what we do with the following data
 			local line_index = string.sub(line, 1, string.find(line, ",") - 1)
-			print(line_index)
 
 			-- remove the first part from the line so we can get the next part
 			line = string.sub(line, string.find(line, ",") + 1, string.len(line))
-
-			-- if background color
-			if (line_index == "background_color") then
-				-- insert those bad boys into a table if it's not nil
-			end
-
-			-- if background image
-			if (line_index == "background_image") then
-				-- set self.background to the next value
-			end
-
+			
 			-- if size
 			if (line_index == "size") then
-				-- set self.size to the next values
+				-- set self.size to the next values.
 			end
 
-			-- if follow object
+			-- if view_size
+			if (line_index == "view_size") then
+				-- set self.view_size to the next values.
+			end
+
+			-- if follow_object
 			if (line_index == "follow_object") then
-				-- set self.follow_object to the next values
+				-- set self.follow_object to the next values.
 			end
 
-			-- if follow distance
+			-- if follow_distance
 			if (line_index == "follow_distance") then
-				-- set self.follow_distance to the next values
+				-- set self.follow_distance to the next values.
+			end
+
+			-- if background_color
+			if (line_index == "background_color") then
+				-- set self.background_color.
+			end
+
+			-- if background_image
+			if (line_index == "background_image") then
+				-- set self.background_image to the next value.
+			end
+
+			-- if tile
+			if (line_index == "tile") then
+				-- load the tiles position and load it to the tiles table for rendering.
 			end
 
 			-- if object
 			if (line_index == "object") then
-				-- create the object and add it the objects table
+				-- create the object and add it the objects table.
 			end
 
 			-- print(string.find(line, ","))
