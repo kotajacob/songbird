@@ -9,8 +9,7 @@ A [love2D](https://love2d.org/) game engine extender 🕊️
 
 [Love2D](https://love2d.org/) describes itself by saying "LÖVE is an \*awesome\* framework you can use to make 2D games in Lua." 
 
-It provides you with simple graphical rendering bindings in [Lua](https://www.lua.org/) for rendering graphics, playing audio, video, and all the other basic
-tools needed to make a game. 
+It provides you with simple bindings in [Lua](https://www.lua.org/) for rendering graphics, playing audio, video, and all the other basic tools needed to make a game. 
 
 Songbird comes into the picture by providing a basic setup for a games code 
 and various functions to design object oriented games with love. In addition to providing base code there are 
