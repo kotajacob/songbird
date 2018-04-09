@@ -19,7 +19,7 @@ function class_room:new(name)
 
 	-- try to open the sroom file
 	local room_path = "rooms/" .. self.name .. ".sroom"
-	if (love.filesystem.exists(room_path)) then
+	if (love.filesystem.getInfo(room_path)) then
 		-- found the sroom file
 		for line in love.filesystem.lines(room_path) do
 			-- get the first part of the line
