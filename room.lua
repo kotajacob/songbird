@@ -13,7 +13,7 @@ function class_room:new(name)
 	self.follow_object = nil
 	self.follow_distance = nil
 	self.background_image = nil
-	self.background_color = {255, 255, 255}
+	self.background_color = {1, 1, 1}
 	self.tiles = {}
 	self.objects = {}
 
